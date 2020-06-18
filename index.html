@@ -7,34 +7,35 @@
 
   <title>WRM Temporal Network</title>
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/reveal.css">
-  <link rel="stylesheet" href="css/theme/beige.css">
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/black.css" id="theme">
 
   <!-- Theme used for syntax highlighting of code -->
-  <link rel="stylesheet" href="lib/css/isbl-editor-light.css">
-
-  <!-- Printing and PDF exports -->
-  <script>
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-    document.getElementsByTagName('head')[0].appendChild(link);
-  </script>
+  <link rel="stylesheet" href="css/highlight/isbl-editor-light.css">
 </head>
 <body>
 <div class="reveal">
   <div class="slides">
     <section>
-      <h2>WRM Temporal Network</h2>
+      <h2>Presentation</h2>
       <small>Authors...</small>
     </section>
     <section>
       <h2>Slide 1</h2>
       <p>
         ABC
+        $$
+        a_b
+        $$
       </p>
+      <pre><code data-trim data-noescape>
+(def lazy-fib
+  (concat
+   [0 1]
+   ((fn rfib [a b]
+        (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+  </code></pre>
     </section>
     <section>
       <h2>Thanks</h2>
@@ -47,8 +48,13 @@
   </div>
 </div>
 
-<script src="js/reveal.js"></script>
 
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="plugin/math/math.js"></script>
 <script>
   // More info about config & dependencies:
   // - https://github.com/hakimel/reveal.js#configuration
@@ -56,7 +62,7 @@
   Reveal.initialize({
     hash: true,
     controls: true,
-    progress: false,
+    progress: true,
     slideNumber: false,
     overview: true,
     center: true,
@@ -77,18 +83,9 @@
       mathjax: 'plugin/math/MathJax.js',
       config: 'TeX-AMS_HTML-full', // See http://docs.mathjax.org/en/latest/config-files.html
       // pass other options into `MathJax.Hub.Config()`
-      TeX: {Macros: {RR: "{\\bf R}"}}
+      TeX: { Macros: { RR: "{\\bf R}" } }
     },
-    dependencies: [
-      {src: 'plugin/markdown/marked.js'},
-      {src: 'plugin/markdown/markdown.js'},
-      {src: 'plugin/highlight/highlight.js'},
-      // Zoom in and out with Ctrl+click
-      {src: 'plugin/zoom-js/zoom.js', async: true},
-      {src: 'plugin/notes/notes.js', async: true},
-      // MathJax
-      {src: 'plugin/math/math.js', async: true}
-    ]
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
   });
 </script>
 </body>
