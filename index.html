@@ -22,27 +22,115 @@
       <small>Authors: Michał Miotk, Kamil Orłow</small>
     </section>
     <section>
-      <h1>Created project</h1>
-      <img src="images/manager.png"/>
+      <h1>Agenda</h1>
+      <ol>
+        <li>Introduction</li>
+        <li>Weapon Dataset Creator</li>
+        <li>SynthDet</li>
+        <li>ML->Dataset</li>
+        <li>Future Work</li>
+        <li>Links</li>
+      </ol>
     </section>
     <section>
-      <h2>Detected models</h2>
-      <p>
-       Colt 1911, M4, Colt Python, SW 715, CZ Skorpion, Glock, 
-      </p>
+      <section>
+        models 3D
+      </section>
+      <section>
+        <h1>perception - Dataset  Creator</h1>  
+      </section>
+      <section>
+        <h1>perception - SynthDet</h1>  
+      </section>
+      <section>
+        article
+      </section>
     </section>
     <section>
-      <h2>Datasets</h2>
+      <h1>Weapon DatasetCreator</h1>
+      <section>
+        <img src="images/manager.png"/>
+      </section>
+      <section>
+        rotate Glock with changing background
+      </section>
+      <section>
+        background 2D->3D
+        setting objects, Raycast, object Pooling, 5FPS
+        |_
+          |_
+             |_
+      </section>
+      <section>
+        Foreground
+      </section>
+      <section>
+        grid, Rotation 3^3 == 27(120degrees)
+      </section>
+      <section>
+        occlusion -> scaling (Background)
+      </section>
+      <section>
+        Output - 2FPS
+      </section>
+    </section>
+    <section>
+      SynthDet
+      <section>
+        Background - nalozone zdjecia na szesciany i walce, brak pelnych modeli
+      </section>
+      <section>
+        Foreground - moga byc obiekty z backgroundu na foreground - ustawia sie procentowa szanse
+      </section>
+      <section>
+        Occlusion - full implementation, ours is partial
+      </section>
+      <section>
+        Features - lights, blur, extra
+      </section>
+    </section>
+    
+    <section>
+      <h2>ML - Datasets</h2>
         <section>
           <small>1. EdgeAi Weapon Dataset</small><br/>
+          <section>
+            <img src="images/edgeaidataset.png"/>
+          </section>
         </section>
         <section>
           <small>2. Dataset Generated in Unity</small><br/>
-        </section>
-        <section>
-          <img src="images/edgeaidataset.png"/>
+          Based on free models from assets store - some of them has three instances
         </section>
       </p>
+    </section>
+    <section>
+      labels, category
+    </section>
+    <section>
+      config detectron
+    </section>
+    <section>
+      wyniki1 - 1cat(toozoom), 20cat, edgeai, filmik ze skladanki wytrenowanej na edgeai
+    </section>
+    <section>
+      own script - because it is not json output and no instance segmentation
+    </section>
+    <section>
+      aws sagemaker - labelling force, we, up to 10 labels, own scripts because no instance segmentation
+    </section>
+    <section>
+      <h1>Future Work</h1>
+      <section>
+      3D bounding box
+      </section>
+      <section>
+        scanning przestrzeni 3D
+      </section>
+    </section>
+    <section>
+      <h1>Links</h1>
+      Synthdet, perception, article, unity documentation, detectron2, aws sagemaker, streamlit
     </section>
   </div>
 </div>
