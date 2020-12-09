@@ -91,46 +91,115 @@
     </section>
     
     <section>
-      <h2>ML - Datasets</h2>
         <section>
-          <small>1. EdgeAi Weapon Dataset</small><br/>
+          ML - Datasets
+        </section>
+        <section>
+          <h2>1. EdgeAi Weapon Dataset</h2>
           <section>
-            <img src="images/edgeaidataset.png"/>
+            <p align="center">
+              <img src="images/edgeaidataset.png"/>
+            </p>
           </section>
         </section>
         <section>
-          <small>2. Dataset Generated in Unity</small><br/>
-          Based on free models from assets store - some of them has three instances
+          <h2>2. Dataset Generated in Unity</h2>
+          <small>Based on free models from assets store - some of them has three instances</small>
+          <div class="row">
+            <div class="column">
+              <img src="images/assetstore.png" style="width:50%">
+            </div>
+            <div class="column">
+              <img src="images/dataset_generated_synthdet.png" style="width:50%">
+            </div>
+          </div>
         </section>
-      </p>
     </section>
     <section>
-      labels, category
+      <h1>Categories</h1>
+      <table style="width:100%">
+        <tr>
+          <td height=80 width=80><img src="images/weapon_cats/ab10.png"/></td>
+          <td height=80 width=80><img src="images/weapon_cats/ak.png"/></td>
+          <td height=80 width=80><img src="images/weapon_cats/colt.png"/></td>
+        </tr>
+        <tr>
+          <td height=80 width=80><img src="images/weapon_cats/danwesson.png"/></td>
+          <td height=80 width=80><img src="images/weapon_cats/enfield.png"/></td>
+          <td height=80 width=80><img src="images/weapon_cats/glock.png"/></td>
+        </tr>
+        <tr>
+          <td height=80 width=80><img src="images/weapon_cats/m4.png"/></td>
+          <td height=80 width=80><img src="images/weapon_cats/mp5.png"/></td>
+          <td height=80 width=80><img src="images/weapon_cats/scar.png"/></td>
+        </tr>
+        <tr>
+          <td height=80 width=80></td>
+          <td height=80 width=80><img src="images/weapon_cats/thompson.png"/></td>
+          <td height=80 width=80></td>
+        </tr>
+      </table> 
     </section>
     <section>
-      config detectron
+      <h1>Detectron2 configuration</h1>
+      <tabl style="float:center"e> 
+        <tr>
+          <td>MODEL.WEIGHTS</td>
+          <td>mask_rcnn_R_50_FPN_3x.yaml</td>
+        </tr>
+        <tr>
+          <td>MODEL.BACKBONE.FREEZE_AT</td>
+          <td>2</td>
+        </tr>
+      </table>
     </section>
     <section>
-      wyniki1 - 1cat(toozoom), 20cat, edgeai, filmik ze skladanki wytrenowanej na edgeai
+      <section>
+        <h1>Results</h1> 
+        <img src="images/results/precision.png" style="width:50%"/>
+      </section>
+      <section>
+        <h2>Precision on glock detection</h2>
+        <small>trained on datesetgenerated with SynthDet</small> 
+        <img src="images/results/glock_precision.png" style="width:50%"/>
+      </section>
     </section>
     <section>
-      own script - because it is not json output and no instance segmentation
+      <h2>It needs own script to parse output</h2>
+      <table>
+        <tr>
+          <td height=400 width=400><img src="images/perception_output/text.png"/></td>
+          <td height=400 width=400><img src="images/perception_output/segmentation.png"/></td>
+        </tr>
+      </table>
     </section>
     <section>
-      aws sagemaker - labelling force, we, up to 10 labels, own scripts because no instance segmentation
+      <h2>AWS sagemaker was used for test dataset</h2> 
+      <small>up to 10 labels, own scripts because no instance segmentation</small>
+      <img src="images/labeling_aws.png" style="width:50%"/>
     </section>
     <section>
       <h1>Future Work</h1>
       <section>
-      3D bounding box
+        <img src="images/3dbounding_box.png" style="width:50%"/>
       </section>
       <section>
         scanning przestrzeni 3D
       </section>
     </section>
     <section>
-      <h1>Links</h1>
-      Synthdet, perception, article, unity documentation, detectron2, aws sagemaker, streamlit
+      <h1>Links</h1>    
+      <ul>
+        <li>https://github.com/Unity-Technologies/SynthDet</li>
+        <li>https://github.com/Unity-Technologies/com.unity.perception</li>
+        <li>https://arxiv.org/abs/1902.09967</li>
+        <li>https://docs.unity3d.com/Manual/index.html</li>
+        <li>https://github.com/facebookresearch/detectron2</li>
+        <li>https://aws.amazon.com/sagemaker/</li>
+        <li>https://www.streamlit.io/</li>
+        <li>https://github.com/michalmiotk/gun</li>
+        <li>https://github.com/michalmiotk/WeaponDatasetCreator</li>
+      </ul> 
     </section>
   </div>
 </div>
