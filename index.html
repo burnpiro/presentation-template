@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="author" content="Kemal Erdem">
+  <meta name="author" content="Michal Miotk & Kamil Orlow">
 
   <title>Weapon Detection using Synthethic datasets</title>
 
@@ -120,7 +120,7 @@
     
     <section>
         <section>
-          ML - Datasets
+          <h1>ML - Datasets</h1>
         </section>
         <section>
           <h2>1. EdgeAi Weapon Dataset</h2>
@@ -133,14 +133,12 @@
         <section>
           <h2>2. Dataset Generated in Unity</h2>
           <small>Based on free models from assets store - some of them has three instances</small>
-          <div class="row">
-            <div class="column">
-              <img src="images/assetstore.png" style="width:50%">
-            </div>
-            <div class="column">
-              <img src="images/dataset_generated_synthdet.png" style="width:50%">
-            </div>
-          </div>
+          <table>
+            <tr>
+              <th width="25%"><img src="images/assetstore.png"/></th>
+              <th width="25%"><img src="images/dataset_generated_synthdet.png"/></th>
+            </tr>
+          </table>
         </section>
     </section>
     <section>
@@ -169,49 +167,60 @@
       </table> 
     </section>
     <section>
-      <h1>Detectron2 configuration</h1>
-      <tabl style="float:center"e> 
+      <img src="images/detectron2.png"/>
+      <p>Model configuration</p>
+      <table style="float:left">
         <tr>
-          <td>MODEL.WEIGHTS</td>
-          <td>mask_rcnn_R_50_FPN_3x.yaml</td>
+          <th>MODEL type</th>
+          <th>instance segmentation</th>
         </tr>
         <tr>
-          <td>MODEL.BACKBONE.FREEZE_AT</td>
-          <td>2</td>
+          <th>MODEL.WEIGHTS</th>
+          <th>mask_rcnn_R_50_FPN_3x</th>
+        </tr>
+        <tr>
+          <th>MODEL.BACKBONE.FREEZE_AT</th>
+          <th>2</th>
         </tr>
       </table>
     </section>
     <section>
       <section>
-        <h1>Results</h1> 
+        <h1>Training results</h1> 
         <img src="images/results/precision.png" style="width:50%"/>
       </section>
       <section>
         <h2>Precision on glock detection</h2>
-        <small>trained on datesetgenerated with SynthDet</small> 
-        <img src="images/results/glock_precision.png" style="width:50%"/>
+        <figure>
+          <img src="images/results/glock_precision.png" style="width:50%">
+          <figcaption>trained on dataset generated with SynthDet</figcaption>
+        </figure> 
       </section>
       <section>
-        <h3>Results after trained on weapons dataset from edgeai</h3>
+        <small>Results after training on Synthetic Gun Detection Dataset from Edgecase.ai</small>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/FAx2lqds5Mg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </section>
       <section>
-        <h4>Results are presented in streamlit app</h4>
+        <p>Results are presented in streamlit app</p>
         <img src="images/results/streamlit.png" style="width:50%"/>
       </section>
     </section>
     <section>
-      <h2>It needs own script to parse output</h2>
+      <p>Perception package have no scripts to get COCO output</p>
       <table>
         <tr>
-          <td height=400 width=400><img src="images/perception_output/text.png"/></td>
-          <td height=400 width=400><img src="images/perception_output/segmentation.png"/></td>
+          <td height="40%" width="40%"><img src="images/perception_output/text.png"/></td>
+          <td height="40%" width="40%"><img src="images/perception_output/segmentation.png"/></td>
         </tr>
       </table>
     </section>
     <section>
-      <h2>AWS sagemaker was used for test dataset</h2> 
-      <small>up to 10 labels, own scripts because no instance segmentation</small>
+      <h2>AWS sagemaker was used to create test dataset</h2> 
+      <ul>
+        <li>maximum 10 labels</li>
+        <li>no instance segmentation - only semantic</li>
+        <li>own scripts to convert to coco</li>
+      </ul>
       <img src="images/labeling_aws.png" style="width:50%"/>
     </section>
     <section>
@@ -226,7 +235,7 @@
     </section>
     <section>
       <section>
-        <h3>Links</h3>    
+        <h3>Sources</h3>    
         <ul>
           <li>https://github.com/Unity-Technologies/SynthDet</li>
           <li>https://github.com/Unity-Technologies/com.unity.perception</li>
@@ -242,9 +251,13 @@
         <li>https://github.com/michalmiotk/gun</li>
         <li>https://github.com/michalmiotk/WeaponDatasetCreator</li>
         <li>https://blog.usejournal.com/worlds-first-synthetic-gun-detection-dataset-from-edgecase-ai-dbe3ea8eeb7e</li>
+        <li>https://wandb.ai/</li>
       </ul> 
    </section>
-    </section>
+  </section>
+  <section>
+    <p>Questions ?</p>
+  </section>
   </div>
 </div>
 <script src="dist/reveal.js"></script>
