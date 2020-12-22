@@ -1,3 +1,2 @@
-[link to presentation](https://michalmiotk.github.io/weapondetection-presentation/#/)
-Presentation about weapon model detection using Synthdet and own version of Synthdet  
+[link to presentation](https://michalmiotk.github.io/presentation-gradcam/#/)  
 Fork from burnpiro/presentation-template
