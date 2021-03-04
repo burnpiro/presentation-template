@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="plugin/pointer/pointer.css">
   <link rel="stylesheet" href="dist/theme/black.css" id="theme">
 
   <!-- Theme used for syntax highlighting of code -->
@@ -55,6 +56,8 @@
 <script src="plugin/markdown/markdown.js"></script>
 <script src="plugin/highlight/highlight.js"></script>
 <script src="plugin/math/math.js"></script>
+<script src="plugin/menu/menu.js"></script>
+<script src="plugin/pointer/pointer.js"></script>
 <script>
   // More info about config & dependencies:
   // - https://github.com/hakimel/reveal.js#configuration
@@ -85,7 +88,20 @@
       // pass other options into `MathJax.Hub.Config()`
       TeX: { Macros: { RR: "{\\bf R}" } }
     },
-    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+    menu: {
+      themes: [
+        { name: 'ISBL', theme: 'dist/theme/isbl-editor-light.css' },
+        { name: 'Black', theme: 'dist/theme/black.css' },
+        { name: 'Moon', theme: 'dist/theme/moon.css' },
+        { name: 'Simple', theme: 'dist/theme/simple.css' },
+      ]
+    },
+    pointer: {
+      color: "red",
+      pointerSize: 18,
+      alwaysVisible: true
+    },
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath, RevealMenu, RevealPointer ]
   });
 </script>
 </body>
