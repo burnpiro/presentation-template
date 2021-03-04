@@ -444,6 +444,7 @@ Reveal.on( 'customevent', function() {
 		<script src="plugin/search/search.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/menu/menu.js"></script>
 		<script>
 
 			// Also available as an ES module, see:
@@ -453,9 +454,16 @@ Reveal.on( 'customevent', function() {
 				progress: true,
 				center: true,
 				hash: true,
-
+				menu: {
+					themes: [
+						{ name: 'Beige', theme: 'dist/theme/beige.css' },
+						{ name: 'Black', theme: 'dist/theme/black.css' },
+						{ name: 'Moon', theme: 'dist/theme/moon.css' },
+						{ name: 'Simple', theme: 'dist/theme/simple.css' },
+					]
+				},
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu ]
 			});
 
 		</script>
