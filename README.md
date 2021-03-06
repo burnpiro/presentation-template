@@ -6,7 +6,7 @@ This presentation template is using RevealJS library with additional plugins:
 - [`RevealMarkdown`](https://revealjs.com/markdown/) - Markdown support, Author: Hakim El Hattab
 - [`RevealHighlight`](https://revealjs.com/code/) - Code syntax highlighting, Author: Hakim El Hattab
 - [`RevealMath`](https://revealjs.com/math/) - Latex support, Author: Hakim El Hattab
-- [`RevealZoom`](https://revealjs.com/math/) - Alt + click zoom, Author: Hakim El Hattab
+- [`RevealZoom`](https://revealjs.com/plugins/#built-in-plugins) - Alt + click zoom, Author: Hakim El Hattab
 - [`RevealMenu`](https://github.com/denehyg/reveal.js-menu) - Latex support, Author: Greg Denehy
 - [`RevealPointer`](https://github.com/burnpiro/reveal-pointer) - Mouse pointer, Author: Kemal Erdem
 
