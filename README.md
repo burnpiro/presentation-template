@@ -12,7 +12,5 @@ This presentation template is using RevealJS library with additional plugins:
 
 
 ## License
-
------
 MIT licensed
 Copyright (C) 2021: [Kemal Erdem](https://github.com/burnpiro)
