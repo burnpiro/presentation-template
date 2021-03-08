@@ -9,7 +9,9 @@
 
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/custom.css">
   <link rel="stylesheet" href="plugin/pointer/pointer.css">
+<!--  <link rel="stylesheet" href="plugin/drawer/drawer.css">-->
   <link rel="stylesheet" href="dist/theme/black.css" id="theme">
 
   <!-- Theme used for syntax highlighting of code -->
@@ -60,6 +62,7 @@
 <script src="plugin/math/math.js"></script>
 <script src="plugin/menu/menu.js"></script>
 <script src="plugin/pointer/pointer.js"></script>
+<script src="plugin/drawer/drawer.js"></script>
 <script>
   // More info about config & dependencies:
   // - https://github.com/hakimel/reveal.js#configuration
@@ -102,6 +105,13 @@
       pointerSize: 18,
       alwaysVisible: false
     },
+    // drawer: {
+    //   toggleBoardKey: "h",
+    //   toggleDrawKey: "d",
+    //   color: "red",
+    //   pointerSize: 4,
+    //   alwaysVisible: false
+    // },
     plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath, RevealMenu, RevealPointer ]
   });
 </script>

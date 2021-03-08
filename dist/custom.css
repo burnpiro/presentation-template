@@ -1,0 +1,47 @@
+.display-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.caption {
+    font-size: 0.4em !important;
+    color: rgba(0,0,0,0.5);
+    font-weight: bold;
+}
+
+.heading {
+    font-size: 2.01em;
+}
+
+.heading-secondary {
+    font-size: 1.6em;
+}
+
+.small {
+    font-size: 0.6em !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-margin img {
+    margin: 0 !important;
+}
+
+.display-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "p1 p2"
+    "p3 p4";
+}
