@@ -9,6 +9,7 @@ This presentation template is using RevealJS library with additional plugins:
 - [`RevealZoom`](https://revealjs.com/plugins/#built-in-plugins) - Alt + click zoom, Author: Hakim El Hattab
 - [`RevealMenu`](https://github.com/denehyg/reveal.js-menu) - Latex support, Author: Greg Denehy
 - [`RevealPointer`](https://github.com/burnpiro/reveal-pointer) - Mouse pointer, Author: Kemal Erdem
+- [`RevealDrawer`](https://github.com/burnpiro/reveal-drawer) - Drawing board, Author: Kemal Erdem
 
 
 ## License
