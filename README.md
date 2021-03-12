@@ -1,4 +1,4 @@
-# [RevealJS](https://revealjs.com/) presentation template
+# [RevealJS](https://revealjs.com/) presentation template [Demo](https://burnpiro.github.io/presentation-template/#/)
 
 This presentation template is using RevealJS library with additional plugins:
 
