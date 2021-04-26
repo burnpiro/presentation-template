@@ -20,7 +20,7 @@
 <body>
 <div class="reveal">
   <div class="slides">
-    <section>
+    <section class="main-slide">
       <h2>Presentation Template</h2>
       <small>Authors...</small>
     </section>
@@ -29,7 +29,7 @@
       <h5>("Q" for pointer)</h5>
       <a href="https://github.com/burnpiro/reveal-pointer">Check plugin's page for details</a>
     </section>
-    <section>
+    <section class="full-width-slide">
       <h2>Drawing board </h2>
       <h5>("T" to toggle drawing board)</h5>
       <p class="small">("D" to toggle drawing)</p>
@@ -38,7 +38,7 @@
         (depends on your color list, if you have 5 colors then 1,2,3,4,5 etc)</p>
       <a class="small" href="https://github.com/burnpiro/reveal-drawer">Check plugin's page for details</a>
     </section>
-    <section>
+    <section class="full-width-compressed-slide">
       <h2>Slide 1</h2>
       <p class="fragment">
         ABC
@@ -76,6 +76,7 @@
 <script src="plugin/menu/menu.js"></script>
 <script src="plugin/pointer/pointer.js"></script>
 <script src="plugin/drawer/drawer.js"></script>
+<script src="plugin/pwr-theme/pwr-theme.js"></script>
 <script>
   // More info about config & dependencies:
   // - https://github.com/hakimel/reveal.js#configuration
@@ -84,7 +85,7 @@
     hash: true,
     controls: true,
     progress: true,
-    slideNumber: true,
+    slideNumber: 'c/t',
     overview: true,
     center: true,
     navigationMode: 'default',
@@ -109,6 +110,8 @@
     menu: {
       themes: [
         { name: 'Default', theme: 'dist/theme/black.css' },
+        { name: 'PWR', theme: 'dist/theme/pwr-theme.css' },
+        { name: 'WUST', theme: 'dist/theme/wust-theme.css' },
         { name: 'Dark', theme: 'dist/theme/blood.css' },
         { name: 'Simple', theme: 'dist/theme/simple.css' },
         { name: 'Serif', theme: 'dist/theme/serif.css' },
@@ -126,7 +129,7 @@
       toggleDrawKey: "d",
       pathSize: 4
     },
-    plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath, RevealMenu, RevealPointer, RevealDrawer ]
+    plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath, RevealMenu, RevealPointer, RevealDrawer, PWRTheme ]
   });
 </script>
 </body>
