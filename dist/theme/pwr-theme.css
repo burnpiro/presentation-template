@@ -71,13 +71,15 @@ section.has-dark-background h6 {
   background-color: #9d2f1e;
   position: absolute;
   width: 5%;
+  min-width: 75px;
+  min-height: 75px;
   height: 100%; }
 
 .reveal.slide:after {
   background-image: url("logo_pwr.png");
   background-size: 30%;
   background-repeat: no-repeat;
-  background-position: center right 12%;
+  background-position: center right 105px;
   content: '';
   display: block;
   background-color: #d1d1d1;
@@ -85,7 +87,9 @@ section.has-dark-background h6 {
   bottom: 0;
   right: 0;
   width: 89vw;
-  height: 8vw; }
+  height: 8vw;
+  min-height: 75px;
+  max-width: calc(100% - 85px); }
 
 .reveal.slide.main-slide:before {
   width: 10%;
@@ -113,6 +117,9 @@ section.has-dark-background h6 {
   background-size: 16%;
   width: 94vw;
   height: 5vw; }
+  @media (max-width: 900px) {
+    .reveal.slide.full-width-compressed-slide:after {
+      background-size: 30%; } }
 
 .reveal .slides section,
 .reveal .slides section > section {
@@ -349,21 +356,39 @@ section.has-dark-background h6 {
 
 .reveal.main-slide .slide-number {
   left: calc(5% - 32px); }
+  @media (max-width: 900px) {
+    .reveal.main-slide .slide-number {
+      left: 16px; } }
 
 .reveal.full-width-slide .slide-number {
   left: calc(5% - 32px); }
+  @media (max-width: 900px) {
+    .reveal.full-width-slide .slide-number {
+      left: 16px; } }
 
 .reveal .slide-menu-button {
   left: calc(5% + 16px) !important; }
+  @media (max-width: 900px) {
+    .reveal .slide-menu-button {
+      left: calc(75px + 32px) !important; } }
 
 .reveal.main-slide .slide-menu-button {
   left: calc(10% + 16px) !important; }
+  @media (max-width: 900px) {
+    .reveal.main-slide .slide-menu-button {
+      left: calc(75px + 32px) !important; } }
 
 .reveal.full-width-slide .slide-menu-button {
   left: calc(12% + 16px) !important; }
+  @media (max-width: 900px) {
+    .reveal.full-width-slide .slide-menu-button {
+      left: calc(75px + 32px) !important; } }
 
 .reveal.full-width-compressed-slide .slide-menu-button {
   left: calc(7% + 16px) !important; }
+  @media (max-width: 900px) {
+    .reveal.full-width-compressed-slide .slide-menu-button {
+      left: calc(75px + 32px) !important; } }
 
 /*********************************************
  * PRINT BACKGROUND
