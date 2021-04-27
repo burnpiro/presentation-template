@@ -61,7 +61,7 @@ section.has-dark-background h6 {
   text-shadow: none; }
 
 .reveal.slide:before {
-  background-image: url("wust.png");
+  background-image: url("wust-high.svg");
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: top;
@@ -76,7 +76,7 @@ section.has-dark-background h6 {
   height: 100%; }
 
 .reveal.slide:after {
-  background-image: url("wust-logo-pwr-szare-ang-poziom-bez-tla.png");
+  background-image: url("wust-wide.svg");
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center right 105px;
