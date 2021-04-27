@@ -348,23 +348,26 @@ section.has-dark-background h6 {
  *********************************************/
 .reveal .slide-number {
   font-size: 18px;
-  left: 16px;
+  transform: translate(-50%, 0);
+  left: 2.5vw;
   bottom: 24px;
   right: unset;
   background-color: unset;
   font-weight: bold; }
+  @media (max-width: 900px) {
+    .reveal .slide-number {
+      left: 7vw;
+      font-size: 14px; } }
+  @media (max-width: 1200px) {
+    .reveal .slide-number {
+      left: 5vw;
+      font-size: 16px; } }
 
 .reveal.main-slide .slide-number {
-  left: calc(5% - 32px); }
-  @media (max-width: 900px) {
-    .reveal.main-slide .slide-number {
-      left: 16px; } }
+  left: 5vw; }
 
 .reveal.full-width-slide .slide-number {
-  left: calc(5% - 32px); }
-  @media (max-width: 900px) {
-    .reveal.full-width-slide .slide-number {
-      left: 16px; } }
+  left: 5vw; }
 
 .reveal .slide-menu-button {
   left: calc(5% + 16px) !important; }
